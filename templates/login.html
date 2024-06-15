@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <style>
+.lo {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+
+  background-color: blue;
+   height: 300px;
+  width: 50%;
+  background-color:grey;
+ position:relative;
+ text-align:center;
+ text-align: center;
+vertical-align: middle;
+display: table-cell;
+left:550px;
+bottom:-200px;
+  }
+
+  </style>
+</head>
+
+<body>
+
+<div class="lo">
+<h3> Login</h3>
+<form method="post">
+    {% csrf_token %}
+  <label for="fname">Username</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="emname">Email address</label><br>
+  <input type="email" id="emname" name="lname" ><br>
+    <input type="submit" value="Login">
+</form>
+</div>
+</body>
+</html>

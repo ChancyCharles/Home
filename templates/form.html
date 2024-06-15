@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  text-align:center;
+  position:relative;
+  bottom:-200px;
+}
+</style>
+</head>
+<body>
+
+<form method="post">
+    {% csrf_token %}
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" ><br>
+ <br> <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" ><br>
+   <br> <label for="email1">Emsil address</label>
+  <input type="email" id="email1" name="email1e" ><br>
+   <br> <label for="pas">Password</label>
+  <input type="password" id="pas" name="pas" ><br>
+   <br> <label for="pass">Password</label>
+  <input type="password" id="pass" name="pass" ><br>
+ <br> <input type="submit" value="Submit">
+</form>
+</body>
+</html>
